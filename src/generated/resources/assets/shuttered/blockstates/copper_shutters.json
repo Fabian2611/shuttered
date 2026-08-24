@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "facing=east,open=false": {
+      "model": "shuttered:block/copper_shutters",
+      "y": 450
+    },
+    "facing=east,open=true": {
+      "model": "shuttered:block/copper_shutters_open",
+      "y": 450
+    },
+    "facing=north,open=false": {
+      "model": "shuttered:block/copper_shutters",
+      "y": 360
+    },
+    "facing=north,open=true": {
+      "model": "shuttered:block/copper_shutters_open",
+      "y": 360
+    },
+    "facing=south,open=false": {
+      "model": "shuttered:block/copper_shutters",
+      "y": 180
+    },
+    "facing=south,open=true": {
+      "model": "shuttered:block/copper_shutters_open",
+      "y": 180
+    },
+    "facing=west,open=false": {
+      "model": "shuttered:block/copper_shutters",
+      "y": 270
+    },
+    "facing=west,open=true": {
+      "model": "shuttered:block/copper_shutters_open",
+      "y": 270
+    }
+  }
+}

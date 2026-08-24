@@ -1,0 +1,13 @@
+{
+  "itemGroup.shuttered": "Example Mod Tab",
+  "block.shuttered.example_block": "Example Block",
+  "item.shuttered.example_item": "Example Item",
+
+  "shuttered.configuration.title": "Shuttered Configs",
+  "shuttered.configuration.section.shuttered.common.toml": "Shuttered Configs",
+  "shuttered.configuration.section.shuttered.common.toml.title": "Shuttered Configs",
+  "shuttered.configuration.items": "Item List",
+  "shuttered.configuration.logDirtBlock": "Log Dirt Block",
+  "shuttered.configuration.magicNumberIntroduction": "Magic Number Text",
+  "shuttered.configuration.magicNumber": "Magic Number"
+}
