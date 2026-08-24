@@ -12,12 +12,17 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Shuttered.MODID);
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SHUTTERED_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.shuttered"))
             .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> ModItems.EXAMPLE_ITEM.get().getDefaultInstance())
+            .icon(() -> ModItems.COPPER_SHUTTERS_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
-                output.accept(ModItems.EXAMPLE_ITEM.get());
+                output.accept(ModItems.COPPER_SHUTTERS_ITEM.get());
+                output.accept(ModItems.ACACIA_SHUTTERS_ITEM.get());
+                output.accept(ModItems.DARK_OAK_SHUTTERS_ITEM.get());
+                output.accept(ModItems.IRON_SHUTTERS_ITEM.get());
+                output.accept(ModItems.SPRUCE_SHUTTERS_ITEM.get());
+                output.accept(ModItems.WARPED_SHUTTERS_ITEM.get());
             }).build());
 
     public static void register(IEventBus modEventBus) {

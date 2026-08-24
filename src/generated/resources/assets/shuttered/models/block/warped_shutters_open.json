@@ -1,0 +1,8 @@
+{
+  "parent": "shuttered:block/shutters_template_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "0": "shuttered:block/warped_shutters",
+    "particle": "shuttered:block/warped_shutters"
+  }
+}

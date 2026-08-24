@@ -1,6 +1,7 @@
 package io.fabianbuthere.shuttered;
 
 import io.fabianbuthere.shuttered.block.ModBlocks;
+import io.fabianbuthere.shuttered.item.ModCreativeModeTabs;
 import io.fabianbuthere.shuttered.item.ModItems;
 import org.slf4j.Logger;
 
@@ -24,13 +25,12 @@ public class Shuttered {
     public static final String MODID = "shuttered";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-
     public Shuttered(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
-
+        ModCreativeModeTabs.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);

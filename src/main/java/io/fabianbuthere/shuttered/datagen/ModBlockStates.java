@@ -20,6 +20,11 @@ public class ModBlockStates extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         registerShutters("copper", ModBlocks.COPPER_SHUTTERS);
+        registerShutters("acacia", ModBlocks.ACACIA_SHUTTERS);
+        registerShutters("dark_oak", ModBlocks.DARK_OAK_SHUTTERS);
+        registerShutters("iron", ModBlocks.IRON_SHUTTERS);
+        registerShutters("spruce", ModBlocks.SPRUCE_SHUTTERS);
+        registerShutters("warped", ModBlocks.WARPED_SHUTTERS);
     }
 
     private void registerShutters(String variant, DeferredBlock<ShuttersBlock> block) {
