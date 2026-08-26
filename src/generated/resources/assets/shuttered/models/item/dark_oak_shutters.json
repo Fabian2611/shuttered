@@ -1,3 +1,4 @@
 {
-  "parent": "shuttered:block/dark_oak_shutters"
+  "parent": "shuttered:block/dark_oak_shutters",
+  "gui_light": "front"
 }

@@ -1,13 +1,16 @@
 {
-  "itemGroup.shuttered": "Example Mod Tab",
-  "block.shuttered.example_block": "Example Block",
-  "item.shuttered.example_item": "Example Item",
-
-  "shuttered.configuration.title": "Shuttered Configs",
-  "shuttered.configuration.section.shuttered.common.toml": "Shuttered Configs",
-  "shuttered.configuration.section.shuttered.common.toml.title": "Shuttered Configs",
-  "shuttered.configuration.items": "Item List",
-  "shuttered.configuration.logDirtBlock": "Log Dirt Block",
-  "shuttered.configuration.magicNumberIntroduction": "Magic Number Text",
-  "shuttered.configuration.magicNumber": "Magic Number"
+  "itemGroup.shuttered": "Shuttered",
+  "block.shuttered.acacia_shutters": "Acacia Shutters",
+  "block.shuttered.bamboo_shutters": "Bamboo Shutters",
+  "block.shuttered.birch_shutters": "Birch Shutters",
+  "block.shuttered.cherry_shutters": "Cherry Shutters",
+  "block.shuttered.copper_shutters": "Copper Shutters",
+  "block.shuttered.crimson_shutters": "Crimson Shutters",
+  "block.shuttered.dark_oak_shutters": "Dark Oak Shutters",
+  "block.shuttered.iron_shutters": "Iron Shutters",
+  "block.shuttered.jungle_shutters": "Jungle Shutters",
+  "block.shuttered.mangrove_shutters": "Mangrove Shutters",
+  "block.shuttered.oak_shutters": "Oak Shutters",
+  "block.shuttered.spruce_shutters": "Spruce Shutters",
+  "block.shuttered.warped_shutters": "Warped Shutters"
 }

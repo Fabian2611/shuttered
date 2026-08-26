@@ -1,3 +1,4 @@
 {
-  "parent": "shuttered:block/iron_shutters"
+  "parent": "shuttered:block/iron_shutters",
+  "gui_light": "front"
 }

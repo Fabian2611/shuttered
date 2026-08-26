@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "shutters",
+  "key": {
+    "#": {
+      "item": "minecraft:oak_planks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "# #",
+    "# #"
+  ],
+  "result": {
+    "count": 4,
+    "id": "shuttered:oak_shutters"
+  }
+}

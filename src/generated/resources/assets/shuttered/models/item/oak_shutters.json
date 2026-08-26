@@ -1,0 +1,4 @@
+{
+  "parent": "shuttered:block/oak_shutters",
+  "gui_light": "front"
+}

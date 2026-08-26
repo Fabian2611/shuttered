@@ -1,3 +1,4 @@
 {
-  "parent": "shuttered:block/spruce_shutters"
+  "parent": "shuttered:block/spruce_shutters",
+  "gui_light": "front"
 }

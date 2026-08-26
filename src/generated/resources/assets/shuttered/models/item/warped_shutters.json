@@ -1,3 +1,4 @@
 {
-  "parent": "shuttered:block/warped_shutters"
+  "parent": "shuttered:block/warped_shutters",
+  "gui_light": "front"
 }

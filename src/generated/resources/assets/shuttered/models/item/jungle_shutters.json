@@ -1,0 +1,4 @@
+{
+  "parent": "shuttered:block/jungle_shutters",
+  "gui_light": "front"
+}

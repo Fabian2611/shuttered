@@ -23,6 +23,13 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.IRON_SHUTTERS_ITEM.get());
                 output.accept(ModItems.SPRUCE_SHUTTERS_ITEM.get());
                 output.accept(ModItems.WARPED_SHUTTERS_ITEM.get());
+                output.accept(ModItems.JUNGLE_SHUTTERS_ITEM.get());
+                output.accept(ModItems.MANGROVE_SHUTTERS_ITEM.get());
+                output.accept(ModItems.OAK_SHUTTERS_ITEM.get());
+                output.accept(ModItems.CRIMSON_SHUTTERS_ITEM.get());
+                output.accept(ModItems.BAMBOO_SHUTTERS_ITEM.get());
+                output.accept(ModItems.BIRCH_SHUTTERS_ITEM.get());
+                output.accept(ModItems.CHERRY_SHUTTERS_ITEM.get());
             }).build());
 
     public static void register(IEventBus modEventBus) {

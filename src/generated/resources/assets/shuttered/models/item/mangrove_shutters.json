@@ -1,0 +1,4 @@
+{
+  "parent": "shuttered:block/mangrove_shutters",
+  "gui_light": "front"
+}
