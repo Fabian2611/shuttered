@@ -1,0 +1,4 @@
+{
+  "parent": "shuttered:block/birch_shutters",
+  "gui_light": "front"
+}

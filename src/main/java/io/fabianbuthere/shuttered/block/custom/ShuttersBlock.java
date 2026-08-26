@@ -57,12 +57,12 @@ public class ShuttersBlock extends HorizontalDirectionalBlock {
             Direction.EAST, EAST_SHAPE_OPEN
     );
 
-    private final boolean CAN_BE_MANUALLY_OPENED;
+    private final boolean isWoodenType;
 
-    protected ShuttersBlock(Properties properties, boolean canBeManuallyOpened) {
+    protected ShuttersBlock(Properties properties, boolean isWoodenType) {
         super(properties.noOcclusion());
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, false).setValue(POWERED, false));
-        CAN_BE_MANUALLY_OPENED = canBeManuallyOpened;
+        this.isWoodenType = isWoodenType;
     }
 
     public static ShuttersBlock create(Properties properties) {
@@ -74,7 +74,27 @@ public class ShuttersBlock extends HorizontalDirectionalBlock {
     }
 
     public boolean canBeManuallyToggled() {
-        return this.CAN_BE_MANUALLY_OPENED;
+        return this.isWoodenType;
+    }
+
+    @Override
+    public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+        return this.isWoodenType;
+    }
+
+    @Override
+    protected boolean useShapeForLightOcclusion(BlockState state) {
+        return state.getValue(OPEN);
+    }
+
+    @Override
+    protected boolean isOcclusionShapeFullBlock(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos) {
+        return false;
+    }
+
+    @Override
+    protected boolean propagatesSkylightDown(BlockState state, @NotNull BlockGetter _level, @NotNull BlockPos _pos) {
+        return state.getValue(OPEN);
     }
 
     @Override

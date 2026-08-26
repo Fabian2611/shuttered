@@ -1,3 +1,4 @@
 {
-  "parent": "shuttered:block/acacia_shutters"
+  "parent": "shuttered:block/acacia_shutters",
+  "gui_light": "front"
 }

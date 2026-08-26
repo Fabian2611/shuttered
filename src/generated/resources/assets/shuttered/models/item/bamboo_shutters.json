@@ -1,0 +1,4 @@
+{
+  "parent": "shuttered:block/bamboo_shutters",
+  "gui_light": "front"
+}

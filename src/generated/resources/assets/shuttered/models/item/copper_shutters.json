@@ -1,3 +1,4 @@
 {
-  "parent": "shuttered:block/copper_shutters"
+  "parent": "shuttered:block/copper_shutters",
+  "gui_light": "front"
 }
