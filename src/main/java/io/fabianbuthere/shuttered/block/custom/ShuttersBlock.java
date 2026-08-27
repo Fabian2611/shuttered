@@ -28,7 +28,7 @@ import java.util.Map;
 import java.util.function.BiConsumer;
 
 public class ShuttersBlock extends HorizontalDirectionalBlock {
-    private static final MapCodec<ShuttersBlock> CODEC = simpleCodec(ShuttersBlock::create);
+    private static final MapCodec<ShuttersBlock> CODEC = simpleCodec(ShuttersBlock::createWoodenType);
 
     private static final VoxelShape NORTH_SHAPE = Block.box(0, 0, 0, 16, 16, 2);
     private static final VoxelShape SOUTH_SHAPE = Block.box(0, 0, 14, 16, 16, 16);
@@ -57,29 +57,35 @@ public class ShuttersBlock extends HorizontalDirectionalBlock {
             Direction.EAST, EAST_SHAPE_OPEN
     );
 
-    private final boolean isWoodenType;
+    private final boolean canBeManuallyToggled;
+    private final boolean canBurn;
 
-    protected ShuttersBlock(Properties properties, boolean isWoodenType) {
+    protected ShuttersBlock(Properties properties, boolean canBeManuallyToggled, boolean canBurn) {
         super(properties.noOcclusion());
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, false).setValue(POWERED, false));
-        this.isWoodenType = isWoodenType;
+        this.canBeManuallyToggled = canBeManuallyToggled;
+        this.canBurn = canBurn;
     }
 
-    public static ShuttersBlock create(Properties properties) {
-        return new ShuttersBlock(properties.noOcclusion(), true);
+    public static ShuttersBlock createWoodenType(Properties properties) {
+        return new ShuttersBlock(properties.noOcclusion(), true, true);
     }
 
     public static ShuttersBlock createIronType(Properties properties) {
-        return new ShuttersBlock(properties.noOcclusion(), false);
+        return new ShuttersBlock(properties.noOcclusion(), false, false);
+    }
+
+    public static ShuttersBlock createNonBurnType(Properties properties) {
+        return new ShuttersBlock(properties.noOcclusion(), true, false);
     }
 
     public boolean canBeManuallyToggled() {
-        return this.isWoodenType;
+        return this.canBeManuallyToggled;
     }
 
     @Override
     public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
-        return this.isWoodenType;
+        return this.canBurn;
     }
 
     @Override

@@ -14,43 +14,43 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Shuttered.MODID);
 
     public static final DeferredBlock<ShuttersBlock> COPPER_SHUTTERS =
-            BLOCKS.registerBlock("copper_shutters", ShuttersBlock::createIronType, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
+            BLOCKS.registerBlock("copper_shutters", ShuttersBlock::createNonBurnType, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
 
     public static final DeferredBlock<ShuttersBlock> ACACIA_SHUTTERS =
-            BLOCKS.registerBlock("acacia_shutters", ShuttersBlock::create, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+            BLOCKS.registerBlock("acacia_shutters", ShuttersBlock::createWoodenType, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
 
     public static final DeferredBlock<ShuttersBlock> JUNGLE_SHUTTERS =
-            BLOCKS.registerBlock("jungle_shutters", ShuttersBlock::create, BlockBehaviour.Properties.ofFullCopy(Blocks.JUNGLE_PLANKS));
+            BLOCKS.registerBlock("jungle_shutters", ShuttersBlock::createWoodenType, BlockBehaviour.Properties.ofFullCopy(Blocks.JUNGLE_PLANKS));
 
     public static final DeferredBlock<ShuttersBlock> DARK_OAK_SHUTTERS =
-            BLOCKS.registerBlock("dark_oak_shutters", ShuttersBlock::create, BlockBehaviour.Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS));
+            BLOCKS.registerBlock("dark_oak_shutters", ShuttersBlock::createWoodenType, BlockBehaviour.Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS));
 
     public static final DeferredBlock<ShuttersBlock> IRON_SHUTTERS =
             BLOCKS.registerBlock("iron_shutters", ShuttersBlock::createIronType, BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
 
     public static final DeferredBlock<ShuttersBlock> SPRUCE_SHUTTERS =
-            BLOCKS.registerBlock("spruce_shutters", ShuttersBlock::create, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS));
+            BLOCKS.registerBlock("spruce_shutters", ShuttersBlock::createWoodenType, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS));
 
     public static final DeferredBlock<ShuttersBlock> WARPED_SHUTTERS =
-            BLOCKS.registerBlock("warped_shutters", ShuttersBlock::create, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS));
+            BLOCKS.registerBlock("warped_shutters", ShuttersBlock::createNonBurnType, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS));
 
     public static final DeferredBlock<ShuttersBlock> MANGROVE_SHUTTERS =
-            BLOCKS.registerBlock("mangrove_shutters", ShuttersBlock::create, BlockBehaviour.Properties.ofFullCopy(Blocks.MANGROVE_PLANKS));
+            BLOCKS.registerBlock("mangrove_shutters", ShuttersBlock::createWoodenType, BlockBehaviour.Properties.ofFullCopy(Blocks.MANGROVE_PLANKS));
 
     public static final DeferredBlock<ShuttersBlock> OAK_SHUTTERS =
-            BLOCKS.registerBlock("oak_shutters", ShuttersBlock::create, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS));
+            BLOCKS.registerBlock("oak_shutters", ShuttersBlock::createWoodenType, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS));
 
     public static final DeferredBlock<ShuttersBlock> CRIMSON_SHUTTERS =
-            BLOCKS.registerBlock("crimson_shutters", ShuttersBlock::create, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS));
+            BLOCKS.registerBlock("crimson_shutters", ShuttersBlock::createNonBurnType, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS));
 
     public static final DeferredBlock<ShuttersBlock> BAMBOO_SHUTTERS =
-            BLOCKS.registerBlock("bamboo_shutters", ShuttersBlock::create, BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS));
+            BLOCKS.registerBlock("bamboo_shutters", ShuttersBlock::createWoodenType, BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS));
 
     public static final DeferredBlock<ShuttersBlock> BIRCH_SHUTTERS =
-            BLOCKS.registerBlock("birch_shutters", ShuttersBlock::create, BlockBehaviour.Properties.ofFullCopy(Blocks.BIRCH_PLANKS));
+            BLOCKS.registerBlock("birch_shutters", ShuttersBlock::createWoodenType, BlockBehaviour.Properties.ofFullCopy(Blocks.BIRCH_PLANKS));
 
     public static final DeferredBlock<ShuttersBlock> CHERRY_SHUTTERS =
-            BLOCKS.registerBlock("cherry_shutters", ShuttersBlock::create, BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_PLANKS));
+            BLOCKS.registerBlock("cherry_shutters", ShuttersBlock::createWoodenType, BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_PLANKS));
 
     public static final Set<DeferredBlock<ShuttersBlock>> SHUTTERS = Set.of(
             COPPER_SHUTTERS, ACACIA_SHUTTERS, JUNGLE_SHUTTERS, DARK_OAK_SHUTTERS, IRON_SHUTTERS, SPRUCE_SHUTTERS,
