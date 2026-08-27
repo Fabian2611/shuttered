@@ -5,7 +5,7 @@ A very small mod, adding shutters in all wood types, as well as iron and copper 
 
 ## Shutters
 
-<img width="1815" height="887" alt="image" src="https://github.com/user-attachments/assets/9917cd59-4997-47dc-8941-de7692b2bf33" />
+<img width="1815" height="887" alt="image" src="https://cdn.modrinth.com/data/cached_images/b41bfd7fb978668bf6e2ae560d184efc07d7d3f1.png" />
 
 ## Crafting
 
